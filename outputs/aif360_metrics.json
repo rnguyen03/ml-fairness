@@ -1,6 +1,6 @@
 {
   "disparate_impact": 0.3596552625800337,
   "statistical_parity_difference": -0.19451574596420296,
-  "equal_opportunity_difference": -0.06465475918928654,
-  "average_odds_difference": -0.06614146198345688
+  "equal_opportunity_difference": -0.061648137679793935,
+  "average_odds_difference": -0.06413751473848389
 }
