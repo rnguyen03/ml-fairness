@@ -1,0 +1,24 @@
+name: ai-fairness
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - nodejs
+  - ipywidgets
+  - aif360
+  - fairlearn
+  - pytest
+  - joblib
+  - notebook
+  - jupyter
+  - ipykernel
+  - pip
+  - pip:
+    - witwidget

@@ -1,0 +1,9 @@
+aif360
+fairlearn
+witwidget
+tensorflow==2.13.0
+tensorflow-model-analysis
+ipykernel
+ipywidgets
+pytest
+joblib
