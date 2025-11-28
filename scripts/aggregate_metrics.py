@@ -68,11 +68,8 @@ def main():
         parts.append("\n\n## Google metrics\n\nNot found.")
 
     summary = "\n\n".join(parts) + "\n"
-    # Write main summary and a comparison copy
     (outdir / "summary.md").write_text(summary)
-    (outdir / "comparison").mkdir(exist_ok=True)
-    (outdir / "comparison" / "summary_all.md").write_text(summary)
-    print("Wrote outputs/summary.md and outputs/comparison/summary_all.md")
+    print("Wrote outputs/summary.md")
 
 
 if __name__ == "__main__":

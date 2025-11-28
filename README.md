@@ -1,12 +1,5 @@
 # AI Fairness Workspace
 
-This workspace includes example notebooks and scripts to run fairness tests using:
-- IBM AIF360
-- Microsoft Fairlearn
-- Google tools (What-If Tool / Fairness Indicators / TFMA)
-
-Environment (recommended): Conda + VS Code
-
 Quick start (macOS, zsh):
 
 ```bash
@@ -14,17 +7,12 @@ Quick start (macOS, zsh):
 conda env create -f environment.yml
 # activate
 conda activate ai-fairness
-# install notebook kernel for this env
-python -m ipykernel install --user --name ai-fairness --display-name "Python (ai-fairness)"
+# run the training and evaluation script
+python scripts/run_all_frameworks.py
 ```
 
-Run the demos
-
-- Open `notebooks/aif360_demo.ipynb` in VS Code or JupyterLab and run the cells.
-- Or run the CLI scripts in `scripts/` (examples: train_model.py, run_aif360_test.py).
-
 Notes
-
+- /tests contains basic pytest with minimum coverage to ensure model training and Fairlearn run without error.
 - On Apple silicon (M1/M2), prefer installing conda from Miniforge/Miniconda that supports arm64; some packages (TensorFlow) may need special wheels. See troubleshooting below.
 
 Troubleshooting

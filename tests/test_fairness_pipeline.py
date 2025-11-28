@@ -1,5 +1,6 @@
 """
 Basic pytest to run training and a simple metric evaluation.
+Incomplete coverage of the fairness pipeline, but at least ensures that the main scripts run without error.
 """
 import subprocess
 import sys

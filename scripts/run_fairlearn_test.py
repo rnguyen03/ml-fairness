@@ -56,7 +56,7 @@ def run_fairlearn_check():
     pd.Series(mf.overall).to_frame("value").to_csv(outdir / "fairlearn_overall.csv")
     print("By-group metrics saved to outputs/fairlearn_by_group.csv")
     print("Overall metrics saved to outputs/fairlearn_overall.csv")
-    # Derive fairness measures: SPD, DI, EOD, AOD
+    # Parse fairness measures: SPD, DI, EOD, AOD
     by = mf.by_group
     try:
         sr = by["selection_rate"]
